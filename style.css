@@ -1,0 +1,37 @@
+.coin {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: lightgray;
+  border: 2px solid black;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 30px;
+  border-bottom: 1px dashed gray;
+  padding-bottom: 30px;
+}
+
+.money-container {
+  padding: 10px;
+}
+
+.bulb {
+  padding: 20px;
+  background-color: darkgray;
+  font-size: large;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.on {
+  background-color: wheat;
+  color: black;
+}
+
+.off {
+  background-color: darkgray;
+  color: white;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Lab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="vending-container">
+        <p class="total">Total: $0.00</p>
+        <button class="cola" data-amount="2.00">
+          <p>Lime Cola</p>
+          <p>$2.00</p>
+        </button>
+        <button class="peanuts" data-amount="3.00">
+          <p>Salted Peanuts</p>
+          <p>$3.00</p>
+        </button>
+        <button class="chocolate" data-amount="4.00">
+          <p>Chocolate Bar</p>
+          <p>$4.00</p>
+        </button>
+        <button class="gummies" data-amount="6.00">
+          <p>Fruit Gummies</p>
+          <p>$6.00</p>
+        </button>
+      </section>
+      <section class="money-container">
+        <form class="make-money">
+          <label for="how-many">How many?</label>
+          <input type="number" id="how-many" name="how-many" />
+          <p>Which coin?</p>
+          <select name="coin" id="coin">
+            <option value="penny">Penny</option>
+            <option value="nickel">Nickel</option>
+            <option value="dime">Dime</option>
+            <option value="quarter">Quarter</option>
+          </select>
+          <button>Make Money!</button>
+        </form>
+        <!-- <div class="coin"></div> -->
+      </section>
+      <section class="bulb-container">
+        <div class="bulb"></div>
+        <button class="on-button">On</button>
+        <button class="off-button">Off</button>
+        <button class="toggle-button">Toggle</button>
+        <button class="end-button">End</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
