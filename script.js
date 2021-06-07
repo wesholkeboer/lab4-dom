@@ -31,6 +31,7 @@ gummiesButton.addEventListener("click", () => {
   totalParagraph.innerText = `Total $${total}.00`;
 });
 
+// first attempt
 // let moneyMaker = document.querySelector(".make-money");
 // // let moneyContainer = document.querySelector(".money-container");
 // // let coinSelector = document.querySelector("#coin");
@@ -53,6 +54,7 @@ gummiesButton.addEventListener("click", () => {
 //   console.dir(newCoin);
 // });
 
+// second attempt
 // let makeMoneyForm = document.querySelector(".make-money");
 // let numberOfCoins = document.querySelector("#how-many").value;
 // let coinType = document.querySelectorAll("#coin").value;
@@ -78,6 +80,25 @@ gummiesButton.addEventListener("click", () => {
 // });
 
 // console.log(moneyMaker());
+
+// Mitch's version
+let moneyForm = document.querySelector(".make-money");
+let coinContainer = document.querySelector(".coin-container");
+
+moneyForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let amount = document.querySelector("#how-many").value;
+  let coin = document.querySelector("#coin").value;
+  for (let i = 0; i < amount; i++) {
+    let newCoin = document.createElement("div");
+    newCoin.innerText = coin;
+    coinContainer.append(newCoin);
+    newCoin.classList.add("coin", coin);
+    newCoin.addEventListener("click", () => {
+      newCoin.remove();
+    });
+  }
+});
 
 let lightbulb = document.querySelector(".bulb");
 let onButton = document.querySelector(".on-button");
